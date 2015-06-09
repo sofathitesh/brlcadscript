@@ -27,7 +27,6 @@ cp -r share/doc/html/specifications/* "$wordpress_path/specifications"
 
 # Remove the all extra contents from php files 
 cd $wordpress_path
-sed -i 's/href="..\/..\//href="<?php echo home_url();?>/g' articles/en/main_menu.php
 sed -i 's/<?xml version="1.0" encoding="UTF-8"?>//g' articles/en/*.php
 sed -i 's/<?xml version="1.0" encoding="UTF-8"?>//g' articles/hy/*.php
 sed -i 's/<?xml version="1.0" encoding="UTF-8"?>//g' articles/it/*.php
